@@ -38,6 +38,20 @@ print(my_seq_2[0::3])
 #nucleotide sequences and reverse complements
 my_seq3 = Seq("GATCGATGGGCCTATATAGGATCGAAAATCGC", IUPAC.unambiguous_dna)
 #print(my_seq3.complement())
-print(my_seq3.reverse_complement())
+#print(my_seq3.reverse_complement())
 
 #What is the difference between complement and reverse complement?
+
+#To reverse a Seq object or string: slice it with- 1
+print(my_seq3[::-1])
+
+protein_seq = Seq("EVRNAK", IUPAC.protein)
+
+#protein_seq.complement()
+#print(protein_seq)
+#Error: proteins do not have complements! 
+
+#Transcription
+
+
+
